@@ -35,7 +35,7 @@ router.post("/", async (req, res) => {
 router.delete("/:_id", async (req, res) => {
 
     try {
-        // we need an _id to select which taskk to delete
+        // we need an _id to select which task to delete
         const { _id } = req.params;
         console.log(_id)
         const result = await deleteTask(_id)

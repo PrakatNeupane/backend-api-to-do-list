@@ -10,9 +10,47 @@ POST http://localhost:8000/api/v1/task
 Content-Type: application/json
 
     {
+        "user_id": "625e2be9c8abba350c4ae472",
         "task": "m",
         "hr":1
     }
 
 ### Task delete api
 DELETE  http://localhost:8000/api/v1/task/625df208200cb4ad9b0797e6
+
+
+
+
+
+
+
+
+
+##-----------------------------------------------------------------------------------------------
+### User get api
+GET http://localhost:8000/api/v1/user
+ 
+### User post api
+POST http://localhost:8000/api/v1/user
+Content-Type: application/json
+
+    {
+        "name": "tony",
+        "email":"ramesh@gmail.com",
+        "password":"23e4"
+    }
+
+### User delete api
+DELETE  http://localhost:8000/api/v1/user/625e28475c9eeac426320e7d
+
+### Single-User get api
+GET http://localhost:8000/api/v1/user/625e2bf6c8abba350c4ae476
+
+### update user get api
+PATCH http://localhost:8000/api/v1/user             
+Content-Type: application/json
+
+{
+    "_id:":"625e2be9c8abba350c4ae472",
+    "newPassword":"tommy12"
+}

@@ -13,8 +13,12 @@ app.use(express.json())//these two lines to receive data from the form as json d
 
 // load modules
 import taskRouter from './src/routers/taskRouter.js'
+import userRouter from './src/routers/userRouter.js'
 
-app.use('/api/v1/task', taskRouter)  // 
+app.use('/api/v1/task', taskRouter)
+app.use('/api/v1/user', userRouter)
+
+
 
 app.use("/", (req, res) => {
 	res.json({ message: "You have reached to the api of not to do application" });
