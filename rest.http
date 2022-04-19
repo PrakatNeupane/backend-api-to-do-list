@@ -1,0 +1,18 @@
+### root api
+GET http://localhost:8000/
+
+
+### Task get api
+GET http://localhost:8000/api/v1/task
+ 
+### Task post api
+POST http://localhost:8000/api/v1/task
+Content-Type: application/json
+
+    {
+        "task": "m",
+        "hr":1
+    }
+
+### Task delete api
+DELETE  http://localhost:8000/api/v1/task/625df208200cb4ad9b0797e6
